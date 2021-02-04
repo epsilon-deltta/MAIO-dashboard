@@ -21,9 +21,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Marketing analysis :: All In One</title>
+  <title>MAIO : Marketing All In One</title>
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/brand/crowd_icon.png" type="image/png">
+  <link rel="shortcut icon" href="./assets/img/brand/favicon0.png">
+
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
@@ -32,6 +33,25 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+
+
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!--DataTable-->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+
+  <!--DataTable-->
+
+  <!--bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- bootstrap-->
+  <!--
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    -->
 </head>
 
 <body>
@@ -415,7 +435,7 @@
             </div>
           </div>
           <!-- Card stats -->
-<!-- Card stats -->
+          <!-- Card stats -->
           <!--
           <div class="row">
             <div class="col-xl-3 col-md-6">
@@ -515,7 +535,59 @@
       </div>
     </div>
     <!-- Page content -->
+
     <div class="container-fluid mt--6">
+  
+  
+        <!-- searching bar -->
+    <div class ='row' style='height:'>
+    <div class="input-group center-block" style="width: 60%">
+        <input id="seq" type="text" class="form-control"
+            placeholder="Enter keyword"
+            onkeypress="javascript:if(event.keyCode == 13){sendSeq()}" style="border-radius: 2em">
+        <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button" onclick="sendSeq()">Run</button>
+
+        </span>
+    </div>
+    </div>
+      <!-- searching bar-->    
+  <!--table-->
+  <div class='row'>
+  <h1>.</h1>
+  </div>
+  <div class='row' >
+    <table id="foo-table" class="table table-bordered">
+		<thead>
+			<tr><th>No</th><th>지역선택</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>1</td><td>서울</td></tr>
+			<tr><td>2</td><td>경기도</td></tr>
+			<tr><td>3</td><td>충청남도</td></tr>
+			<tr><td>4</td><td>충청북도</td></tr>
+			<tr><td>5</td><td>전라남도</td></tr>
+			<tr><td>6</td><td>전라북도</td></tr>
+			<tr><td>7</td><td>경상남도</td></tr>
+			<tr><td>8</td><td>경상북도</td></tr>
+			<tr><td>9</td><td>강원도</td></tr>
+			<tr><td>10</td><td>제주도</td></tr>
+			<tr><td>99</td><td>해외</td></tr>
+		</tbody>
+    </table>
+  <script>
+        jQuery(function($){
+            $("#foo-table").DataTable();
+        });
+  </script>
+    </div>
+  <!--table-->
+
+      <!-- buttons of filttering-->
+      <div class='row'> 
+ 
+      </div>
+      <!-- buttons of filttering-->
       <div class="row">
         <div class="col-xl-8">
           <div class="card bg-default">
